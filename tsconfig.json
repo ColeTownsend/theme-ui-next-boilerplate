@@ -16,9 +16,16 @@
     // https://testing-library.com/docs/react-testing-library/setup#configuring-jest-with-test-utils
     "baseUrl": ".",
     "paths": {
-      "test-utils": ["test/test-utils"]
+      "test-utils": ["test/test-utils"],
+      "@components/*": ["src/components/*"],
+      "@lib/*": ["src/lib/*"]
     }
   },
   "exclude": ["node_modules", "cypress", "coverage", ".github", "test"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/ShoeAutoComplete.jsx"
+  ]
 }
